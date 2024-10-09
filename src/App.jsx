@@ -8,10 +8,12 @@ function App() {
 
   return (
     <>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, aspernatur
-      nesciunt explicabo consectetur eius praesentium officia id odio autem iure
-      maiores reprehenderit molestias omnis ullam. Corporis fugiat at hic
-      voluptatibus.
+      <div className=" text-9xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        dolores reprehenderit tempore iure atque doloribus, necessitatibus
+        excepturi saepe, illo ea laudantium iste dolorum veniam odio sapiente
+        accusamus perferendis possimus voluptate?
+      </div>
     </>
   );
 }
