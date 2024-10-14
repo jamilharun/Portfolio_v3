@@ -1,19 +1,22 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Home from "./components/Home";
+import Introduction from "./components/Introduction";
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      <div className=" text-9xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        dolores reprehenderit tempore iure atque doloribus, necessitatibus
-        excepturi saepe, illo ea laudantium iste dolorum veniam odio sapiente
-        accusamus perferendis possimus voluptate?
-      </div>
+      <Router basename="/Portfolio_v3">
+        <Routes>
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/intro" element={<Introduction />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </Router>
     </>
   );
 }
