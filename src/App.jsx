@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import Introduction from "./components/Introduction";
-import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/intro" element={<Introduction />} />
           <Route path="/home/*" element={<Home />} />
-          {/* <Route path="/aboutMe" element={<AboutMe />} /> */}
         </Routes>
       </Router>
     </>

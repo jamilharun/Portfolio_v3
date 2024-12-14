@@ -1,10 +1,10 @@
 import PrimaryNavigator from "./PrimaryNavigator";
 
-import DevProcess from "./DevProcess";
-import ProjectShowcase from "./ProjectShowcase";
-import QuickIntro from "./QuickIntro";
-import ProjectDisplay from "./ProjectDisplay";
-import ProgLang from "./ProgLang";
+import { Navigate, Route, Routes } from "react-router-dom";
+import MainContent from "../app/MainContent";
+import AboutMe from "../app/AboutMe";
+import Contact from "../app/Contact";
+import ProjectList from "../app/ProjectList";
 
 export default function Home() {
   return (
@@ -22,20 +22,13 @@ export default function Home() {
       >
         <PrimaryNavigator />
 
-        {/* project Showcase */}
-        <ProjectShowcase />
-
-        {/* quickintro */}
-        <QuickIntro />
-
-        {/* projects*/}
-        <ProjectDisplay />
-
-        {/* Development Process */}
-        <DevProcess />
-
-        {/* Programming languages skills best to least */}
-        <ProgLang />
+        <Routes>
+          <Route path="/" element={<Navigate to="/home/mainContent" />} />
+          <Route path="/mainContent" element={<MainContent />} />
+          <Route path="/aboutMe" element={<AboutMe />} />
+          <Route path="/projectList" element={<ProjectList />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
     </div>
   );

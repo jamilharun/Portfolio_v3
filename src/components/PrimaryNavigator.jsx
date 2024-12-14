@@ -11,7 +11,7 @@ export default function PrimaryNavigator() {
     },
     {
       title: "About Me",
-      link: "/aboutMe",
+      link: "/home/aboutMe",
     },
     {
       title: "Projects",
