@@ -2,9 +2,9 @@ import { genProcess } from "../preDatasets/devTimeline";
 
 export default function DevProcess() {
   return (
-    <div className="w-11/12 m-auto">
+    <div className="w-11/12 m-auto py-10">
       <div
-        className="text-5xl font-semibold my-5 bg-gradient-to-r bg-clip-text text-transparent 
+        className="text-5xl lg:text-3xl font-semibold my-5 bg-gradient-to-r bg-clip-text text-transparent 
           mix-blend-normal from-pal_emerald_green via-pal_baby_blue to-pal_neon_purple 
           duration-300 ease-linear cursor-pointer animate-gradient-x bg-[length:200%_200%]"
       >
